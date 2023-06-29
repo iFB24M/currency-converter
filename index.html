@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Currency Converter</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<form class="converter" id="converter">
+		<div class="converter__currency-select">
+			<select name="base-currency" id="base-currency" class="converter__select">
+				<option value="USD" class="converter__option">USD</option>
+				<option value="EUR" class="converter__option">EUR</option>
+				<option value="RUB" class="converter__option">RUB</option>
+			</select>
+			<div class="arrow">-></div>
+			<select name="new-currency" id="new-currency" class="converter__select">
+				<option value="USD" class="converter__option">USD</option>
+				<option value="EUR" class="converter__option">EUR</option>
+				<option value="RUB" class="converter__option">RUB</option>
+			</select>
+		</div>
+		<input type="text" id="count" class="converter__count">
+		<button class="converter__button" type="submit">Convert</button>
+		<div id="result" class="converter__result">100 EUR = 12132 USD</div>
+	</form>
+	<script src="js/script.js"></script>
+</body>
+</html>
